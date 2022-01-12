@@ -1,7 +1,7 @@
 <section>
-  <mat-card>
+  <mat-card (click)="abrirModal()">
     <mat-card-header>
-      <mat-card-title>Básico</mat-card-title>
+      <mat-card-title #seccion>Básico</mat-card-title>
     </mat-card-header>
 
     <mat-card-actions>
@@ -14,7 +14,7 @@
     <mat-card-content>Conectividad</mat-card-content>
   </mat-card>
 
-  <mat-card>
+  <mat-card (click)="abrirModal()">
     <mat-card-header>
       <mat-card-title>Profesional</mat-card-title>
     </mat-card-header>
@@ -29,7 +29,7 @@
     <mat-card-content>Conectividad</mat-card-content>
   </mat-card>
 
-  <mat-card>
+  <mat-card (click)="abrirModal()">
     <mat-card-header>
       <mat-card-title>Máster</mat-card-title>
     </mat-card-header>

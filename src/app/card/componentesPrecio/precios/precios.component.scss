@@ -15,6 +15,9 @@ section{
   border: 2px solid var(--celeste);
   color: var(--celeste);
 } 
+mat-card-title{
+  color: var(--celeste);
+}
 
 mat-card:nth-child(2){
   background: linear-gradient(var(--celeste),var(--azul));
@@ -28,11 +31,26 @@ mat-card:nth-child(2){
 
 mat-card{
   margin: 25px;
-  min-height: 180px;
-  min-width: 400px;
-  max-width: 400px;
-  height: 370px;
+  width: 400px;
+  height: 400px;
   border-radius: 20px;
+  transition: .3s;
+}
+mat-card:hover{
+  width: 450px;
+  height: 420px;
+  background: linear-gradient(var(--celeste),var(--azul));
+  mat-card-content,mat-card-title,button{
+    color: #fff;
+  }
+}
+mat-card:nth-child(2):hover{
+  width: 450px;
+  height: 420px;
+  background:#fff;
+  mat-card-content,mat-card-title,button{
+    color: var(--celeste);
+  }
 }
 
 mat-card-content{
@@ -44,4 +62,5 @@ mat-card-content{
   border-radius: 15px;
   font-size: 20px;
   box-shadow: 1px 2px 10px var(--clarito);
+  color: var(--celeste);
 }

@@ -15,8 +15,6 @@ import { CardModule } from './card/card.module';
   BrowserAnimationsModule,
   MaterialModule,
   CardModule
-  
-
 ],
 exports: [
   BrowserAnimationsModule,
