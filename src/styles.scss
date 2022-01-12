@@ -1,4 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --azul: #093f91;
+  --celeste: #1391c4;
+  --clarito: #7dd6fa;
+}
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+// GAMA COLORES
+$my-primary-color: (
+  200 : var(--azul),
+  500 : var(--azul),
+  700 : var(--azul),
+  contrast: (
+    200 : #ffffff,
+    500 : #ffffff,
+    700 : #ffffff,
+  )
+);
+
+$my-accent-color: (
+  200 : var(--celeste),
+  500 : var(--celeste),
+  700 : var(--celeste),
+  contrast: (
+    200 : #000000,
+    500 : #ffffff,
+    700 : #ffffff,
+  )
+);
+
+$my-warn-color: (
+  200 : var(--clarito),
+  500 : var(--clarito),
+  700 : var(--clarito),
+  contrast: (
+    200 : #000,
+    500 : #fff,
+    700 : #fff,
+  )
+);
+
+// PALETA DE COLORES
+$my-palette-primary: mat-palette($my-primary-color);
+$my-palette-accent: mat-palette($my-accent-color);
+$my-palette-warn: mat-palette($my-warn-color);
+
+// TEMA PROPIO
+$my-theme: mat-light-theme((
+ color: (
+   primary: $my-palette-primary,
+   accent: $my-palette-accent,
+   warn: $my-palette-warn
+ )
+));
+
+// APLICAR NUESTRO TEMA A ANGULAR
+@include angular-material-theme($my-theme);
+
+
 
 html,
 body {
@@ -6,6 +68,10 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: rgb(228, 202, 245);
+  font-family: "Inconsolata", "Helvetica Neue", sans-serif ;
+  background-color: var(--clarito);
+}
+h1,h2,h3,p,button,mat-card,mat-toolbar{
+  font-weight: 400;
+  font-family: "Inconsolata", "Helvetica Neue", sans-serif !important;
 }
