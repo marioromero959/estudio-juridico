@@ -9,8 +9,9 @@ import { ModalComponent } from '../modal/modal.component';
 })
 export class PreciosComponent implements OnInit {
 
+awitas =[1,2,3]
 
-  cards:  [
+  cards = [
     {
       titulo: 'Basico',
       precio: 9.99,
