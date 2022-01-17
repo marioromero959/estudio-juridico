@@ -9,6 +9,7 @@ import { ModalComponent } from '../modal/modal.component';
 })
 export class PreciosComponent  {
 
+awitas =[1,2,3]
 
   cards = [
     {
