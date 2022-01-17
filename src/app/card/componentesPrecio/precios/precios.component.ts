@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModalComponent } from '../modal/modal.component';
 
@@ -7,16 +7,16 @@ import { ModalComponent } from '../modal/modal.component';
   templateUrl: './precios.component.html',
   styleUrls: ['./precios.component.scss'],
 })
-export class PreciosComponent implements OnInit {
+export class PreciosComponent  {
 
 
-  cards:  [
+  cards = [
     {
       titulo: 'Basico',
       precio: 9.99,
       plan: 'Plan Basico',
       paquete: '50GB',
-      usuarios: '5 Uusuarios',
+      usuarios: '5 Usuarios',
       velocidad: '40mb/s',
     },
     {
@@ -37,18 +37,19 @@ export class PreciosComponent implements OnInit {
     },
   ];
 
-
-
   constructor(public dialog: MatDialog) {}
 
-  ngOnInit(): void {}
+  
 
-  abrirModal(card: any) {
-    const dialogRef = this.dialog.open(ModalComponent, {
+  abrirModal ( card:any) {
+    const dialogRef= this.dialog.open(ModalComponent, {
+
       disableClose: false,
-      data:card,
-
+      data: card,
     });
-
   }
+
+
+
 }
+
