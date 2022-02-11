@@ -10,10 +10,8 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     PreciosComponent,
     ModalComponent,
-<<<<<<< HEAD
 
-=======
->>>>>>> dc8acc4a8458d066e22ba83d9e70202b87f540f5
+
   ],
   imports: [
     CommonModule,

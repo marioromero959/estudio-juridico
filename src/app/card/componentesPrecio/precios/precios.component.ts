@@ -44,6 +44,8 @@ awitas =[1,2,3]
 
   abrirModal ( card:any) {
     const dialogRef= this.dialog.open(ModalComponent, {
+      width: '410px',
+
 
       disableClose: false,
       data: card,

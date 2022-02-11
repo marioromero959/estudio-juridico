@@ -1,28 +1,20 @@
-
 <section>
-  <mat-card (click)="abrirModal(card)" *ngFor="let card of cards">
-    <mat-card-header>
-      <mat-card-title #seccion>{{ card.titulo }}</mat-card-title>
-    </mat-card-header>
+  <section>
+    <mat-card (click)="abrirModal(card)" *ngFor="let card of cards">
+      <mat-card-header>
+        <mat-card-title #seccion>{{ card.titulo }}</mat-card-title>
+      </mat-card-header>
 
+      <mat-card-actions>
+        <button mat-stroked-button class="precio_basico">
+          {{ card.precio | currency }}
+        </button>
+      </mat-card-actions>
 
-<section>
-<mat-card (click)="abrirModal(card)" *ngFor="let card of cards">
-  <mat-card-header>
-    <mat-card-title #seccion>{{ card.titulo }}</mat-card-title>
-  </mat-card-header>
-
-  <mat-card-actions>
-    <button mat-stroked-button class="precio_basico">
-      {{ card.precio | currency }}
-    </button>
-  </mat-card-actions>
-
-
-  <mat-card-content>{{ card.paquete }}</mat-card-content>
-  <mat-card-content>{{ card.usuarios }}</mat-card-content>
-  <mat-card-content>{{ card.velocidad }}</mat-card-content>
-  <mat-card-content>{{ card.plan }}</mat-card-content>
-</mat-card>
-
+      <mat-card-content>{{ card.paquete }}</mat-card-content>
+      <mat-card-content>{{ card.usuarios }}</mat-card-content>
+      <mat-card-content>{{ card.velocidad }}</mat-card-content>
+      <mat-card-content>{{ card.plan }}</mat-card-content>
+    </mat-card>
+  </section>
 </section>

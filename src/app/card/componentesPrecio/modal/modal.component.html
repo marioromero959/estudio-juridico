@@ -1,28 +1,21 @@
 <div class="container">
-  <h1 mat-dialog-title>Titulo Modal</h1>
+  <h1 mat-dialog-title>Plan Adquirido</h1>
 
-
-  <div mat-dialog-content>
-    <p> {{data.titulo}} </p>
-    <p> {{data.usuarios}} </p>
-    <p> {{data.velocidad}} </p>
-    <p> {{data.paquete}} </p>
-    <p> {{data.precio}} </p>
+  <div class="ventana-modal" mat-dialog-content>
+    <p>{{ data.titulo }}</p>
+    <p>{{ data.usuarios }}</p>
+    <p>{{ data.velocidad }}</p>
+    <p>{{ data.paquete }}</p>
+    <p>{{ data.precio }}</p>
   </div>
-  <div mat-dialog-actions>
+
+  
+  <div class="centro-boton" mat-dialog-actions>
+    <button mat-button mat-dialog-close>Aceptar</button>
+  </div>
+
+
+  <div class="centro-boton" mat-dialog-actions>
     <button mat-button mat-dialog-close>Cancel</button>
   </div>
 </div>
-
-
-  <mat-dialog-content>
-    <p>Contenido {{data}}</p>
-  </mat-dialog-content>
-
-
-    <mat-dialog-actions>
-      <button mat-button mat-dialog-close >Cancel</button>
-    </mat-dialog-actions>
-
-  
-
